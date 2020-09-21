@@ -14,7 +14,7 @@
 				msg: ''
 			};
 		},
-		name: 'HelloWorld',
+		name: 'Calculator',
 		methods: {
 			calc() {
 				var height = document.querySelector('#height').value;
@@ -26,12 +26,9 @@
 
 				if (isNaN(imc)) {
 					this.msg = "Precha os Dados Corretamente";
-					return;
+				} else {
+					this.msg = imc.toFixed(2);
 				}
-
-				this.msg = imc.toFixed(2);
-
-				return ;
 			}
 		}
 	}
